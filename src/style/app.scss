@@ -1,0 +1,86 @@
+$radius: 20px;
+$gray-color: #ebedf0;
+$blue-color: cadetblue;
+$user-pic-size: 50px;
+$container-size: 600px;
+
+.user-pic {
+  display: inline-block;
+  width: $user-pic-size;
+  height: $user-pic-size;
+}
+.user-name {
+  padding-left: 10px;
+  font-weight: bold;
+}
+body{
+  background-color: $gray-color;
+}
+#app-container{
+  margin: 0 auto;
+  width: $container-size;
+}
+#post-form-container, .post-container{
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  width: 600px;
+  border-radius: $radius;
+}
+input{
+  background-color: $gray-color;
+  border: 0;
+  border-radius: $radius;
+  height: 40px;
+}
+#post-form-container input{
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 20px;
+  width: $container-size - 5px - ($user-pic-size*2);
+}
+#title-input{
+  margin-left: 10px;
+}
+#desc-input, #tags-input{
+  margin-left: $user-pic-size + 10px;
+}
+button{
+  background-color: $blue-color;
+  border-radius: $radius;
+  color:white;
+  border:0;
+  padding: 10px;
+}
+#publish-btn{
+  margin-left: $container-size - ($user-pic-size*2) - 55px;
+}
+.comment-input {
+  padding: 20px;
+  width: $container-size - ($user-pic-size*2) - 90px;
+  margin-right: 5px;
+}
+.post-comments button {
+  margin-right: 5px;
+}
+.post-content, .comment-content {
+  padding-left: 60px;
+}
+.post-content span {
+  color: darkslategray;
+  font-size: 14px;
+  font-weight: bold;
+}
+.tags {
+  margin-left: 10px;
+  padding: 3px 10px;
+  background-color: darkslategray;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color:white;
+  }
+ }
